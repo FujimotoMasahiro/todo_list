@@ -1,19 +1,64 @@
 h1 {
-    text-align: center;
-    background-color: #a7a7;
-}
-button {
-    margin: 0 auto;
-    display: block;
+  text-align: center;
+  background-color: #a7a7;
 }
 
 ul {
-    margin: 1em auto;
-    border: 1px solid #a7a7a7;
-    width: 50vw;
-    padding: 0.5em 0.5em 0.5em 2em;
+  margin: 1em auto;
+  border: 1px solid #a7a7a7;
+  width: 50vw;
+  padding: 0.5em;
 }
 
 ul > li {
-    list-style: circle;
+  list-style: none;
+  display: flex;
+}
+
+ul > li > input[type="checkbox"] {
+  width: 2em;
+  flex: 1;
+}
+
+ul > li > span {
+  width: 3em;
+  flex: 5;
+}
+
+ul > li > button.delete {
+  flex: 1;
+  margin: 0.1em auto;
+  padding: 0 0.5em;
+}
+
+ul > li > input[type="text"] {
+  width: 3em;
+  flex: 5;
+  margin-right: .5em;
+}
+
+ul > li > button.decision {
+  flex: 1;
+  margin: 0.1em auto;
+  padding: 0 0.5em;
+  background-color: #86a7ff;
+  color: white;
+  border: 1px solid #a7a7a7;
+  margin-right: .5em;
+}
+
+ul > li > button.cancel {
+  flex: 1;
+  width: 5em;
+  margin: 0.1em auto;
+  padding: 0 0.5em;
+  background-color: #ff8686;
+  color: white;
+  border: 1px solid #a7a7a7;
+}
+
+
+button.add-todo {
+  margin: 0 auto;
+  display: block;
 }
