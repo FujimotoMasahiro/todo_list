@@ -62,3 +62,8 @@ button.add-todo {
   margin: 0 auto;
   display: block;
 }
+
+.text-color_red {
+  color: red;
+}
+
